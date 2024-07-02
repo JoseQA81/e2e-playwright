@@ -25,7 +25,7 @@ Before(async function() {
   // Define viewport size based on the environment variable VIEWPORT
   let device = {};
   if (process.env.VIEWPORT === 'mobile') {
-    device = devices['iPhone 12'];
+    device = devices['pixel 7'];
   } else {
     device = devices['Desktop Chrome'];
   }

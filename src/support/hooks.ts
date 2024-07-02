@@ -16,7 +16,7 @@ class CustomWorld extends World {
 }
 
 setWorldConstructor(CustomWorld);
-setDefaultTimeout(20000); //Tiempo máximo de espera en milisegundos
+setDefaultTimeout(20000); //Tiempo máximo de espera en milisegundos. 20.000 son 20 segundos.
 
 Before(async function() {
   // Launch browser in headless mode

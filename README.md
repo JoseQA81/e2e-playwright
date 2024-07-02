@@ -37,6 +37,5 @@ npx playwright codegen playwright.dev
 2. Test results reports in HTML and VIDEO can be found in latest runs artifacts.
 
 
-## Autora
-Reyes Cuesta: https://www.linkedin.com/in/reyescuesta
-
+## Autor
+José Andrés Lorca: https://www.linkedin.com/in/jos%C3%A9-andr%C3%A9s-lorca-g%C3%A1lvez-10183a286/

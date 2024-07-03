@@ -28,6 +28,9 @@ With Visual Studio Code:
 1. Run test on Desktop: npm run test:desktop
 2. Run test on Mobile: npm run test:mobile
 
+## Generate Test results report:
+1. To generate reports run: npm run generate-report
+
 ## Run Playwright Code Generator
 npx playwright codegen playwright.dev
 

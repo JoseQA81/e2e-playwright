@@ -31,8 +31,17 @@ With Visual Studio Code:
 ## Generate Test results report:
 1. To generate reports run: npm run generate-report
 
-## Run Playwright Code Generator
+## Run Playwright Code Generator:
 npx playwright codegen playwright.dev
+
+## Run specific scenario:
+1. add tag to scenario in feature file
+2. Run command npm run test -- --tags '@tag'
+3. Run in debug mode npm run debug -- --tags '@tag'
+
+## Debug specific scenario:
+1. npm run debug:desktop -- --tags '@buyproduct'
+2. npm run debug:mobile -- --tags '@buyproduct'
 
 
 ##  Run tests on CI with github Actions:

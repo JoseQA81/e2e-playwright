@@ -6,7 +6,7 @@ let browser: Browser;
 class CustomWorld extends World {
   page: Page;
   context: BrowserContext;
-  URL: string = 'https://bootcampqa.com';
+  URL: string = 'https://thinking-tester-contact-list.herokuapp.com/';
 
   constructor(options: any) {
     super(options);
@@ -20,7 +20,7 @@ setDefaultTimeout(20000); //Tiempo máximo de espera en milisegundos. 20.000 son
 
 Before(async function() {
   // Launch browser in headless mode
-  browser = await chromium.launch({ headless: true });
+  browser = await chromium.launch({ headless: false });
 
   // Define viewport size based on the environment variable VIEWPORT
   let device = {};

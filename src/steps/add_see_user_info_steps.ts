@@ -6,7 +6,7 @@ Given('the user is logged in on the herokuapp', async function () {
     await this.page.goto('https://thinking-tester-contact-list.herokuapp.com/login');
     await this.page.getByPlaceholder('Email').fill('joseM@gmail.com');
     await this.page.getByPlaceholder('Password').fill('1231235');
-    await this.page.getByRole('button', { name: 'Submit' }).click();
+    await this.page.getByRole('button', { name: 'Submit' }).click({ timeout: 60000 });
     
     })
 

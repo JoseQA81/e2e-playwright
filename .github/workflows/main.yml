@@ -32,6 +32,7 @@ jobs:
         run: npm run test:desktop
 
       - name: Generate HTML Report for Desktop
+      if: always()
         env:
           REPORT_PATH: src/reports/desktop
         run: npm run generate-report
@@ -70,6 +71,7 @@ jobs:
         run: npm run test:mobile
 
       - name: Generate HTML Report for Mobile
+      if: always()
         env:
           REPORT_PATH: src/reports/
         run: npm run generate-report

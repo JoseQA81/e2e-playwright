@@ -10,7 +10,8 @@
     "test:desktop": "cross-env VIEWPORT=desktop npm run test",
     "test:mobile": "cross-env VIEWPORT=mobile npm run test",
     "debug:desktop": "cross-env PWDEBUG=1 VIEWPORT=desktop cucumber-js --require-module ts-node/register --config cucumber.js",
-    "debug:mobile": "cross-env PWDEBUG=1 VIEWPORT=mobile cucumber-js --require-module ts-node/register --config cucumber.js"
+    "debug:mobile": "cross-env PWDEBUG=1 VIEWPORT=mobile cucumber-js --require-module ts-node/register --config cucumber.js",
+    "test:addUser": "cucumber-js --require-module ts-node/register --config cucumber.js --tags @addUser"
   },
   "keywords": [],
   "author": "Reyes Cuesta Bootcamp QA",

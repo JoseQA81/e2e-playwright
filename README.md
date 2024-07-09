@@ -3,7 +3,7 @@
 > Typescript and Playwright with Cucumber e2e testing project.
 
 ### 💻 Description
-E2e tests for https://bootcamp-qa.com
+E2e tests for https://thinking-tester-contact-list.herokuapp.com/
 
 Covered Features:
 - Visit Home Page

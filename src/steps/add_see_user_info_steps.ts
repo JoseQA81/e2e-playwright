@@ -7,8 +7,8 @@ Given('the user is logged in on the herokuapp', async function () {
     await this.page.getByPlaceholder('Email').fill('joseM@gmail.com');
     await this.page.getByPlaceholder('Password').fill('1231235');
     await this.page.getByRole('button', { name: 'Submit' }).click({ timeout: 60000 });
-    
-    })
+
+})
 
 Given('the user clicks on {string} button', async function (buttonName: string) {
     await this.page.getByRole('button', { name: buttonName }).click({ timeout: 90000 });
@@ -23,10 +23,10 @@ When('the user fills the form with first name {string}, last name {string}, addr
     await this.page.getByPlaceholder('Country').fill(country);
 })
 
-When('the user clicks the submit button', async function () { 
+When('the user clicks the submit button', async function () {
     await this.page.getByRole('button', { name: 'Submit' }).click({ timeout: 60000 });
-  })
-  
+})
+
 
 Then('the user should see {string} in the contact list', async function (contactName: string) {
     await expect(this.page.getByRole('cell', { name: contactName })).toBeVisible();
@@ -38,7 +38,7 @@ Then('the user should see {string} in the contact list', async function (contact
 
 Given('the user clicks the {string} button', async function (buttonName: string) {
     await this.page.getByRole('button', { name: buttonName }).click();
-  })
+})
 
 Then('the user should see the heading {string}', async function (heading: string) {
     await expect(this.page.getByRole('heading')).toContainText(heading);
@@ -58,11 +58,11 @@ When('the user fills the form with empty info, first name "", last name "", addr
     await this.page.getByPlaceholder('Country').fill('');
 })
 
-When('the user clicks on the submit button', async function () { 
+When('the user clicks on the submit button', async function () {
     await this.page.getByRole('button', { name: 'Submit' }).click({ timeout: 60000 });
-  })
-  
+})
+
 
 Then('the user should see {string} message', async function (errorMessage: string) {
     await expect(this.page.locator('#error')).toContainText(errorMessage);
-  })
+})

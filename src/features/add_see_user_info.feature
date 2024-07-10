@@ -2,23 +2,23 @@ Feature: Add user info at herokuapp
 
    Background:
     Given the user is logged in on the herokuapp
-
+@addUser
 Scenario: Login with username and password
     When the user fills username with "joseM@gmail.com"
     And the user fills password with "1231235"
     And the user presses submit button
     Then the user should see contact list
 
-@addUser
-Scenario: Add user information
+
+Scenario: Add user information with random data
 
     Given the user clicks on "Add a New Contact" button
-    When the user fills the form with first name "Antonia", last name "González Reverte", address "Calle Prueba4, 10", city "Murcia", postal code "553322", and country "España"
+    When the user fills the form with random first name, random last name
     And the user clicks on "Submit" button
-    Then the user should see "Antonia González Reverte" in the contact list
+    Then the user should see the new contact in the contact list
 
 
-  @addUser
+  
   Scenario: Add user information with empty fields
 
     Given the user clicks the "Add a New Contact" button

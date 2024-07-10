@@ -20,7 +20,8 @@ setDefaultTimeout(20000); //Tiempo máximo de espera en milisegundos. 60.000 son
 
 Before(async function() {
   // Launch browser in headless mode
-  browser = await chromium.launch({ headless: true });
+  browser = await chromium.launch({ headless: true, slowMo: 50 });
+
 
   // Define viewport size based on the environment variable VIEWPORT
   let device = {};

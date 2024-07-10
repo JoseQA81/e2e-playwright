@@ -1,13 +1,11 @@
 Feature: Add user info at herokuapp
 
-   Background:
-    Given the user is logged in on the herokuapp
-@addUser
-Scenario: Login with username and password
+Background:
+
+    Given the user is on the herokuapp login page
     When the user fills username with "joseM@gmail.com"
     And the user fills password with "1231235"
     And the user presses submit button
-    Then the user should see contact list
 
 
 Scenario: Add user information with random data

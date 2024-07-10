@@ -11,7 +11,7 @@ Given('the user is logged in on the herokuapp', async function () {
 })
 
 Given('the user clicks on {string} button', async function (buttonName: string) {
-    await this.page.getByRole('button', { name: buttonName }).click({ timeout: 90000 });
+    await this.page.getByRole('button', { name: buttonName }).click();
 })
 
 When('the user fills the form with random first name, random last name', async function () {
@@ -24,7 +24,7 @@ When('the user fills the form with random first name, random last name', async f
 })
 
 When('the user clicks the submit button', async function () {
-    await this.page.getByRole('button', { name: 'Submit' }).click({ timeout: 60000 });
+    await this.page.getByRole('button', { name: 'Submit' }).click();
 })
 
 
@@ -57,7 +57,7 @@ When('the user fills the form with empty info, first name "", last name "", addr
 })
 
 When('the user clicks on the submit button', async function () {
-    await this.page.getByRole('button', { name: 'Submit' }).click({ timeout: 60000 });
+    await this.page.getByRole('button', { name: 'Submit' }).click();
 })
 
 
